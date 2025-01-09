@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Its not www</title>
-                <meta http-equiv = "refresh" content = "0; url = https://sarangwandile.xyz" />
-
-
-        </head>
-        </body>
-        <h1> Redirecting to sarangwandile.xyz</h1>
-        <img src="https://c.tenor.com/IVCnKbtTeRQAAAAC/tenor.gif" alt="loading image"/>
-
-        </body>
+   <head>
+      <title>Its not www</title>
+      <meta http-equiv = "refresh" content = "0; url = https://sarangwandile.xyz" />
+   </head>
+   <style>
+      body {
+      margin:0;
+      padding:0;
+      background:#262626;
+      }
+      .loader-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      }
+      .progress-bar {
+      width: 80%;
+      max-width: 400px;
+      height: 20px;
+      background-color: #3c3c3c;
+      border-radius: 10px;
+      box-shadow:0 0 20px #e0e0e0;
+      border:3px solid #fff000;
+      overflow: hidden;
+      }
+      .progress {
+      width: 0;
+      height: 100%;
+      background-color: #FF5C35;
+      animation: fill 4s infinite;
+      }
+      @keyframes fill {
+      0% {
+      width: 0;
+      }
+      100% {
+      width: 100%;
+      }
+      }
+   </style>
+   </body>
+    <div class="loader-container">
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+</div>
+   </body>
 </html>
